@@ -88,8 +88,6 @@ class AF extends React.Component {
                         {/*           rotation="-90 0 0"*/}
                         {/*           geometry="primitive:plane"*/}
                         {/*           material="shader: ocean; color: blue; wave-height: 10">*/}
-
-                        {/*</a-entity>*/}
                     </a-marker>
                     <a-entity camera></a-entity>
                 </a-scene>
