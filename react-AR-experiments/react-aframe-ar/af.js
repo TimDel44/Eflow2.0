@@ -42,11 +42,14 @@ class AF extends React.Component {
 
             return (
             <div>
-                <a-scene embedded artoolkit='sourceType: webcam; sourceWidth: 240; sourceHeight: 180;' render="antialias: true" arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false;">
+                <p> Donc le nombre est {this.state.data} </p>
+                <a-scene embedded artoolkit='sourceType: webcam; sourceWidth: 240; sourceHeight: 180;'
+                         render="antialias: true" outline>
                     <a-marker preset="hiro">
+
                         <a-text value="Wh" rotation="-90 0 0" position="0.3 0 0" z-offset="1" anchor="align">
                         </a-text>
-                        <a-text value={this.state.data.nombre} rotation="-90 0 0" position="0 0 0" z-offset="1" anchor="align" material="shader: flat">
+                        <a-text value={this.state.data.nombre} rotation="-90 0 0" position="0 0 0" z-offset="1" anchor="align">
                         </a-text>
                         <a-text value="Consommation :" rotation="-90 0 0" position="-1.7 0 0" z-offset="1" anchor="align">
                         </a-text>
@@ -71,6 +74,16 @@ class AF extends React.Component {
                         {/*           geometry="primitive:plane"*/}
                         {/*           material="shader: ocean; color: blue; wave-height: 10">*/}
 
+
+                        <a-text value= {this.state.data}  >
+
+                        </a-text>
+                        {/*<a-entity*/}
+                        {/*    position="1 0.5 0"*/}
+                        {/*    rotation="-90 0 0"*/}
+                        {/*    geometry="primitive: plane; width: 4; height: auto"*/}
+                        {/*    material="visible: false"*/}
+                        {/*    text="value: {this.state.data}">*/}
                         {/*</a-entity>*/}
                     </a-marker>
                     <a-entity camera></a-entity>
