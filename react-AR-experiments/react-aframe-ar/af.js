@@ -46,7 +46,7 @@ class AF extends React.Component {
                     <a-marker preset="hiro">
                         <a-text value="Wh" rotation="-90 0 0" position="0.3 0 0" z-offset="1" anchor="align">
                         </a-text>
-                        <a-text value={this.state.data} rotation="-90 0 0" position="0 0 0" z-offset="1" anchor="align">
+                        <a-text value={this.state.data} rotation="-90 0 0" position="0 0 0" z-offset="1" anchor="align" material="shader: flat">
                         </a-text>
                         <a-text value="Consommation :" rotation="-90 0 0" position="-1.7 0 0" z-offset="1" anchor="align">
                         </a-text>
